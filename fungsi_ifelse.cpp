@@ -24,12 +24,22 @@ void procedurOutput(){
 
 }
 
+string UkuranSegitiga(double l){
+    //jika luas lebih dari 60
+
+    if (l > 60){
+        return "besar";
+    }
+    else{
+        return "kecil";
+    }
+}
 void procedurOutput2(){
-    cout << "luas Segitiga = " << hitungluas2(alas, tinggi) << endl;
+    cout << "luas Segitiga = " << UkuranSegitiga(hitungluas2(alas, tinggi)) << endl;
 }
 
 int main(){
     procedurInput();
-    procedurOutput();
     procedurOutput2();
 
+}
